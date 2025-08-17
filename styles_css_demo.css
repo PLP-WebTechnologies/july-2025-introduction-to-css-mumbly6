@@ -1,0 +1,473 @@
+/* ===================================
+   CSS Box Model Demonstration
+   ================================== */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* ===================================
+   HEADER SECTION
+   ================================== */
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 0; /* Vertical padding */
+    margin-bottom: 30px; /* Bottom margin for spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #4a5568;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 15px; /* Bottom margin */
+    padding: 10px 20px; /* Padding around title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styles */
+.navigation {
+    text-align: center;
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px; /* Using gap for spacing between items */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px; /* Padding for clickable area */
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   MAIN CONTAINER
+   ================================== */
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* ===================================
+   SECTION STYLING
+   ================================== */
+
+.intro-section {
+    background-color: #ffffff;
+    padding: 40px; /* All-around padding */
+    margin-bottom: 40px; /* Bottom margin */
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-heading {
+    font-size: 2.2em;
+    color: #2d3748;
+    margin-bottom: 20px; /* Bottom margin */
+    padding-bottom: 10px; /* Bottom padding */
+    border-bottom: 3px solid #667eea;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    margin-bottom: 15px; /* Bottom margin between paragraphs */
+    padding: 15px; /* Padding around text */
+    background-color: #f7fafc;
+    border-left: 4px solid #4299e1;
+    border-radius: 4px;
+}
+
+.highlight-text {
+    font-size: 1.1em;
+    padding: 20px; /* Generous padding */
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    margin-top: 15px; /* Top margin */
+    font-style: italic;
+}
+
+/* ===================================
+   CARDS SECTION - Box Model Demo
+   ================================== */
+
+.features-section {
+    margin-bottom: 50px; /* Bottom margin */
+    padding: 30px 0; /* Vertical padding */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Gap between cards */
+    margin-top: 30px; /* Top margin */
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Different padding and margin for each card type */
+.content-card {
+    background-color: #e3f2fd;
+    border: 3px solid #1976d2;
+    padding: 25px; /* Moderate padding */
+    margin: 10px; /* Small margin */
+}
+
+.padding-card {
+    background-color: #e8f5e8;
+    border: 3px solid #388e3c;
+    padding: 35px; /* Large padding to demonstrate */
+    margin: 15px; /* Medium margin */
+}
+
+.border-card {
+    background-color: #fff3e0;
+    border: 6px solid #f57c00; /* Thick border */
+    padding: 20px; /* Moderate padding */
+    margin: 20px; /* Larger margin */
+}
+
+.margin-card {
+    background-color: #fce4ec;
+    border: 2px solid #c2185b;
+    padding: 30px; /* Good padding */
+    margin: 25px; /* Largest margin to show separation */
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Bottom margin */
+    padding-bottom: 8px; /* Bottom padding */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    color: #2d3748;
+}
+
+.card-text {
+    font-size: 1em;
+    line-height: 1.7;
+    padding: 10px 0; /* Vertical padding */
+    margin: 0; /* Reset margin */
+}
+
+/* ===================================
+   BUTTONS SECTION
+   ================================== */
+
+.buttons-section {
+    text-align: center;
+    padding: 40px 20px; /* Padding around section */
+    margin-bottom: 40px; /* Bottom margin */
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between buttons */
+    margin-top: 25px; /* Top margin */
+}
+
+.btn {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    outline: none;
+    
+    /* Box Model properties for buttons */
+    padding: 14px 28px; /* Vertical and horizontal padding */
+    margin: 5px; /* Small margin around each button */
+    border: 2px solid transparent;
+}
+
+.primary-btn {
+    background-color: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.primary-btn:hover {
+    background-color: #5a6fd8;
+    border-color: #5a6fd8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+.secondary-btn {
+    background-color: #718096;
+    color: white;
+    border-color: #718096;
+}
+
+.secondary-btn:hover {
+    background-color: #4a5568;
+    border-color: #4a5568;
+    transform: translateY(-2px);
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: #667eea;
+    border-color: #667eea;
+}
+
+.outline-btn:hover {
+    background-color: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.danger-btn {
+    background-color: #e53e3e;
+    color: white;
+    border-color: #e53e3e;
+}
+
+.danger-btn:hover {
+    background-color: #c53030;
+    border-color: #c53030;
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   BOX MODEL VISUALIZATION
+   ================================== */
+
+.visualization-section {
+    background-color: #ffffff;
+    padding: 40px; /* Section padding */
+    margin-bottom: 40px; /* Bottom margin */
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.box-demo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px; /* Top margin */
+}
+
+.demo-box {
+    /* Visualizing the box model with different colored sections */
+    background-color: #ff9500; /* Margin color */
+    padding: 30px; /* This represents margin visually */
+    border: 15px solid #dc2626; /* Thick red border */
+    border-radius: 8px;
+    position: relative;
+}
+
+.demo-box::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background-color: #16a085; /* Padding color */
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.content-area {
+    background-color: #3498db; /* Content color */
+    padding: 40px 60px; /* Padding inside content */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.content-label {
+    display: block;
+    text-align: center;
+}
+
+/* Legend for the visualization */
+.box-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px; /* Padding for legend items */
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+
+.margin-color {
+    background-color: #ff9500;
+}
+
+.border-color {
+    background-color: #dc2626;
+}
+
+.padding-color {
+    background-color: #16a085;
+}
+
+.content-color {
+    background-color: #3498db;
+}
+
+.legend-text {
+    font-weight: bold;
+    color: #2d3748;
+}
+
+/* ===================================
+   FOOTER SECTION
+   ================================== */
+
+.footer {
+    background-color: #2d3748;
+    color: white;
+    padding: 30px 20px; /* Padding for footer */
+    margin-top: 50px; /* Top margin to separate from content */
+    border-top: 4px solid #667eea;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center footer content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-text {
+    font-size: 1em;
+    margin: 0; /* Reset margin */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px; /* Space between footer links */
+}
+
+.footer-link {
+    color: #cbd5e0;
+    text-decoration: none;
+    padding: 8px 12px; /* Padding for clickable area */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   ================================== */
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2em;
+        padding: 15px 10px; /* Reduced padding on mobile */
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 15px; /* Reduced gap on mobile */
+    }
+    
+    .intro-section {
+        padding: 25px; /* Reduced padding on mobile */
+        margin-bottom: 25px; /* Reduced margin on mobile */
+    }
+    
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box-demo {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 20px; /* Reduced gap on mobile */
+    }
+    
+    /* Adjust card margins and padding for mobile */
+    .content-card,
+    .padding-card,
+    .border-card,
+    .margin-card {
+        margin: 10px; /* Consistent smaller margin on mobile */
+        padding: 20px; /* Consistent padding on mobile */
+    }
+}
