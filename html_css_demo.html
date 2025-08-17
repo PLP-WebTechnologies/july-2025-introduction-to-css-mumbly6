@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="main-title">CSS Box Model Showcase</h1>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        <!-- Introduction Section -->
+        <section class="intro-section" id="about">
+            <h2 class="section-heading">Understanding the CSS Box Model</h2>
+            <p class="intro-text">
+                The CSS Box Model is fundamental to web design and layout. Every element on a webpage 
+                is essentially a rectangular box that consists of content, padding, border, and margin.
+            </p>
+            <p class="highlight-text">
+                This demonstration showcases various applications of the box model with different 
+                spacing, borders, and background colors to visualize how these properties work together.
+            </p>
+        </section>
+
+        <!-- Feature Cards Section -->
+        <section class="features-section" id="features">
+            <h2 class="section-heading">Box Model Components</h2>
+            <div class="cards-container">
+                <div class="card content-card">
+                    <h3 class="card-title">Content</h3>
+                    <p class="card-text">
+                        The actual content of the element, such as text, images, or other HTML elements.
+                    </p>
+                </div>
+                
+                <div class="card padding-card">
+                    <h3 class="card-title">Padding</h3>
+                    <p class="card-text">
+                        The space between the content and the border. Padding is transparent and increases 
+                        the element's size.
+                    </p>
+                </div>
+                
+                <div class="card border-card">
+                    <h3 class="card-title">Border</h3>
+                    <p class="card-text">
+                        The border surrounds the padding and content. It can have different styles, 
+                        widths, and colors.
+                    </p>
+                </div>
+                
+                <div class="card margin-card">
+                    <h3 class="card-title">Margin</h3>
+                    <p class="card-text">
+                        The outermost space that separates the element from other elements. 
+                        Margins are transparent.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Buttons Section -->
+        <section class="buttons-section">
+            <h2 class="section-heading">Button Styling Examples</h2>
+            <div class="button-group">
+                <button class="btn primary-btn">Primary Button</button>
+                <button class="btn secondary-btn">Secondary Button</button>
+                <button class="btn outline-btn">Outline Button</button>
+                <button class="btn danger-btn">Danger Button</button>
+            </div>
+        </section>
+
+        <!-- Box Model Visualization -->
+        <section class="visualization-section">
+            <h2 class="section-heading">Box Model Visualization</h2>
+            <div class="box-demo">
+                <div class="demo-box">
+                    <div class="content-area">
+                        <span class="content-label">Content Area</span>
+                    </div>
+                </div>
+                <div class="box-legend">
+                    <div class="legend-item">
+                        <span class="legend-color margin-color"></span>
+                        <span class="legend-text">Margin (Orange)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color border-color"></span>
+                        <span class="legend-text">Border (Red)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color padding-color"></span>
+                        <span class="legend-text">Padding (Green)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color content-color"></span>
+                        <span class="legend-text">Content (Blue)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 CSS Box Model Demo. Created for educational purposes.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
